@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer} from '@react-navigation/native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 
 import Home from './views/homescreen/index';
 import QR from './views/qrcode/index';
+import Search from './views/search/index';
 
 export default function App() {
 
@@ -39,7 +39,7 @@ export default function App() {
         />
         <Tab.Screen
         name="search"
-        component={Home}
+        component={Search}
         options={{
             tabBarLabel: 'Search',
             tabBarIcon: ({ color }) => (
