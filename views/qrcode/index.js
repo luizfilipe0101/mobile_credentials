@@ -15,6 +15,7 @@ export default function Search({route, navigation, props}) {
         setScanned(false)
     })
 
+    
     const handleBarCodeScanned = ({ type, data }) => {
         setScanned(true);
         Search_participante(navigation, data);
